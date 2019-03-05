@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            triangulo
+        </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+      <ion-item >
+          <ion-label>Valor 1</ion-label>
+          <ion-input type="number" [(ngModel)]="valor1" name="valor1"></ion-input>
+      
+          <ion-label >valor 2</ion-label>
+          <ion-input type="number" [(ngModel)]="valor2" name="valor2" ></ion-input>
+        </ion-item>
+        <ion-item >  
+            <ion-label >calcular</ion-label> 
+  <ion-button color="danger" (click)="CalcularArea(valor1,valor2)" >Area</ion-button>
+    
+ 
+  <ion-button color="success" (click)="CalcularPerimetro(valor1,valor2)" >Perimetro</ion-button>
+    
+  </ion-item>
+
+</ion-content>
